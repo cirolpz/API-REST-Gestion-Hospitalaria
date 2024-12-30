@@ -51,19 +51,13 @@ Este proyecto es una API REST diseñada para gestionar los datos de médicos, us
 
 1.  Clona este repositorio:
     
-    bash
-    
-    Copiar código
     
     `git clone https://github.com/tu-usuario/api-gestion-hospitalaria.git  
     cd api-gestion-hospitalaria` 
     
 2.  Configura las variables de entorno:
     -   Base de datos:
-        
-        bash
-        
-        Copiar código
+    
         
         `export DB_URL=jdbc:mysql://localhost:3306/hospital  
         export DB_USER=usuario  
@@ -71,26 +65,16 @@ Este proyecto es una API REST diseñada para gestionar los datos de médicos, us
         
     -   JWT:
         
-        bash
-        
-        Copiar código
         
         `export JWT_SECRET=tu-secreto  
         export JWT_EXPIRATION=3600000` 
         
 3.  Construye el proyecto con Maven:
     
-    bash
-    
-    Copiar código
-    
     `mvn clean install` 
     
 4.  Ejecuta la aplicación:
     
-    bash
-    
-    Copiar código
     
     `java -jar target/api-gestion-hospitalaria-0.0.1.jar` 
     
@@ -100,10 +84,6 @@ Este proyecto es una API REST diseñada para gestionar los datos de médicos, us
 ## 📘 Documentación de la API
 
 -   Accede a la documentación interactiva en:
-    
-    bash
-    
-    Copiar código
     
     `http://localhost:8080/swagger-ui.html` 
     
@@ -115,17 +95,11 @@ Este proyecto es una API REST diseñada para gestionar los datos de médicos, us
 -   **Construcción**:  
     Genera un archivo `.war` para despliegue en servidores:
     
-    bash
-    
-    Copiar código
     
     `mvn package` 
     
 -   **Despliegue nativo**:  
     Crea una imagen nativa con GraalVM:
     
-    bash
-    
-    Copiar código
     
     `mvn -Pnative clean package`
